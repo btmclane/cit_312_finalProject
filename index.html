@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>President's Day</title>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="/images/faviconk.png">
+    <link rel="stylesheet/less" type="text/css" href="Style/main.less"/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" type="image/x-icon" href="Favicon/favicon.ico">
+    <script src="java.js" defer></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.11.3/less.min.js"></script>
+    <link rel="stylesheet" href="Style/main.css" />
+  </head>
+  <body>
+    <!-- Hamburger menu used to save screen space on smaller screens. It will have an icon to click to see links on small screens. -->
+        <a class="hamburger" href="#navbar">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+      <nav id="navbar">
+        <ul>
+            <i class="fa-solid fa-house"></i>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="quiz.html">
+            Quiz
+            </a></li>
+            <li><a href="https://potus.com/presidential-facts/political-party/">Affiliation</a></li>
+            <li><a href="https://www.factretriever.com/us-presidents-facts">Fun Facts</a></li>
+
+        </ul>    
+        <div>
+          <a class="close" href="#">
+            <i class="fa-solid fa-xmark"></i>
+        </a>
+        </div>
+      </nav>
+      
+      <div class="wrapper">
+        <h1>President's Day</h1>
+       
+        <!-- Container fluid is used to make the page flow better and the row and column set up helps the page adapt to different screen sizes -->
+        <div id="container-fluid">
+            <div class="row row-cols-sm-2 row-cols-md-3 row-cols-lg-5 row-cols-xl-3">
+      <!-- Start of accordian -->
+      <!-- Accordian used to have accesibility to check out information on the two presidential parties -->
+              <div class="col accordion-area">
+                <div class="accordion" id="accordionRecipes">
+                  <h2>Presidential Party Info</h2>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                    <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne">
+                    Democrat
+                    </button>
+                    </h2>
+                    <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="Democrat"
+                    data-bs-parent="#accordionRecipes">
+                    <div class="accordion-body">
+                      The Democratic Party is generally associated with more progressive policies. 
+                      Democrats typically advocate for civil rights of ethnic and religious minorities, 
+                      and they support a safety net for individuals (such as various social welfare programs, 
+                      including Medicaid and food stamps). 
+                    </div>
+                    </div>
+                    </div>
+      
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                      <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="true"
+                      aria-controls="collapseTwo">
+                      Republican
+                      </button>
+                      </h2>
+                      <div
+                      id="collapseTwo"
+                      class="accordion-collapse collapse "
+                      aria-labelledby="Republican"
+                      data-bs-parent="#accordionRecipes">
+                      <div class="accordion-body">
+                        Many Republicans advocate for reduced taxes as a means of stimulating the economy and advancing individual 
+                        economic freedom, and they generally support conservative social policies. Republicans also tend to desire 
+                        an economy with fewer government regulations and fewer government-funded social programs. Regarding foreign policy, 
+                        the Republican Party traditionally has supported a strong national defense and the aggressive pursuit of U.S. 
+                        national security interests. 
+                      </div>
+                      </div>
+                      </div>
+      
+                                   
+                 </div>
+                 <!-- End of accordian -->
+                <br>
+                <!-- Start of modal -->
+                <!-- Modal used to explain the functionability of the site if anyone has issues -->
+                 <button type="button" class="btn btn-lg btn-secondary" data-bs-toggle="modal" data-bs-target="#presModal">
+                  Site Guide
+                  </button> 
+            
+                    <div class="modal fade"
+                    id="presModal"
+                    tabindex="-1"
+                    aria-labelledby="presModalLabel"
+                    aria-hidden="true">
+                    
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+            
+                    <h5 class="modal-title"
+                    id="presModalLabel">
+                    Website Help
+                    </h5>
+                    <button type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close">
+                  </button>
+            
+                    </div>
+                    <div class="modal-body">
+            
+                      <h6>President Carousel</h6>
+                      <p>You can use the arrows on the left and right of image to scroll through as well as see info on them below.</p>
+                      <h6>Party Info</h6>
+                      <p>If you click on the arrows it will drop down the info on presidential parties.</p>
+                      <h6>Vote Info</h6>
+                      <p>All you have to do to see the info is click on the button and a popup will appear.</p>
+                      <h6>Links</h6>
+                      <p>The quiz link will take you to a president quiz. The Affiliation tab takes you to a site where the presidents are
+                        listed by party. Lastly the fun facts tab takes you to site with random fun facts.
+                      </p>
+            
+                    </div>
+                    <div class="modal-footer">
+            
+                      <button type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal">
+                      Close
+                  </button>
+            
+                    </div>
+                    </div>
+                    </div>
+                  </div>
+                  <!-- End of modal -->
+      <br>
+            </div>
+          <!-- Start of president carousel -->
+          <!-- Carousel used to save screen space and give the user the opportunity to scroll through the presidents or just watch them switch through -->
+              <div class="col carousel-area ">
+      
+                  <div
+                  id="course_carousel"
+                  class="carousel carousel-light"
+                  data-bs-ride="carousel"
+                  data-bs-interval="10000">
+          
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                      class="d-block w-100"
+                      src="images/pres1.jpg"
+                      alt="President"
+                      />
+                      <h4><strong>George Washington</strong> <br>
+                        1st President
+                      </h4>
+                      <p>Years in office: 1789-1797<br>
+                      Lifespan: 1732-1799<br>
+                      Vice President: John Adams<br>
+                      Party: Unaffiliated<br>
+                      Fact: Washington's bold actions saved the American Revolution twice.</p>
+                      </div>
+          
+                      <div class="carousel-item">
+                        <img
+                        class="d-block w-100"
+                        src="images/pres2.jpg"
+                        alt="President"
+                        />
+                        <h4><strong>John Adams</strong> <br>
+                          2nd President
+                        </h4>
+                        <p>Years in office: 1797-1801<br>
+                        Lifespan: 1735-1826<br>
+                        Vice President: Thomas Jefferson<br>
+                        Party: Federalist<br>
+                        Fact: Adams defended British soldiers after the Boston Massacre</p>
+                        </div>
+
+                        <div class="carousel-item">
+                          <img
+                          class="d-block w-100"
+                          src="images/pres3.jpg"
+                          alt="President"
+                          />
+                          <h4><strong>Thomas Jefferson</strong> <br>
+                            3rd President
+                          </h4>
+                          <p>Years in office: 1801-1809<br>
+                          Lifespan: 1743-1826<br>
+                          Vice President: Aaron Burr & George Clinton<br>
+                          Party: Democratic-Republican<br>
+                          Fact: Jefferson graduated from the College of William and Mary and briefly practiced law, with the biggest number of his cases concerning land ownership claims.</p>
+                          </div>
+
+                          <div class="carousel-item">
+                            <img
+                            class="d-block w-100"
+                            src="images/pres4.jpg"
+                            alt="President"
+                            />
+                            <h4><strong>James Madison</strong> <br>
+                              4th President
+                            </h4>
+                            <p>Years in office: 1809-1817<br>
+                            Lifespan: 1751-1836<br>
+                            Vice President: George Clinton & Elbridge Gerry<br>
+                            Party: Democratic-Republican<br>
+                            Fact: Madison was the President during the War of 1812. </p>
+                            </div>
+
+                            <div class="carousel-item">
+                              <img
+                              class="d-block w-100"
+                              src="images/pres5.jpg"
+                              alt="President"
+                              />
+                              <h4><strong>James Monroe</strong> <br>
+                                5th President
+                              </h4>
+                              <p>Years in office: 1817-1825<br>
+                              Lifespan: 1758-1831<br>
+                              Vice President: Daniel D. Tompkins<br>
+                              Party: Democratic-Republican<br>
+                              Fact: James Monroe was the last president of the “Virginia Dynasty.” </p>
+                              </div>
+
+                              <div class="carousel-item">
+                                <img
+                                class="d-block w-100"
+                                src="images/pres6.jpg"
+                                alt="President"
+                                />
+                                <h4><strong>John Quincy Adams</strong> <br>
+                                  6th President
+                                </h4>
+                                <p>Years in office: 1825-1829<br>
+                                Lifespan: 1767-1848<br>
+                                Vice President: John C. Calhoun<br>
+                                Party: Democratic-Republican/National Republican<br>
+                                Fact: John Quincy Adams was elected president despite losing both the popular and electoral votes. </p>
+                                </div>
+
+                                <div class="carousel-item">
+                                  <img
+                                  class="d-block w-100"
+                                  src="images/pres7.jpg"
+                                  alt="President"
+                                  />
+                                  <h4><strong>Andrew Jackson</strong> <br>
+                                    7th President
+                                  </h4>
+                                  <p>Years in office: 1829-1837<br>
+                                  Lifespan: 1767-1845<br>
+                                  Vice President: John C. Calhoun & Martin Van Buren<br>
+                                  Party: Democratic<br>
+                                  Fact: Andrew Jackson is the president on the $20 bill. </p>
+                                  </div>
+
+                                  <div class="carousel-item">
+                                    <img
+                                    class="d-block w-100"
+                                    src="images/pres8.jpg"
+                                    alt="President"
+                                    />
+                                    <h4><strong>Martin Van Buren</strong> <br>
+                                    8th President
+                                    </h4>
+                                    <p>Years in office: 1837-1841<br>
+                                    Lifespan: 1782-1862<br>
+                                    Vice President: Richard Mentor Johnson<br>
+                                    Party: Democratic<br>
+                                    Fact: Van Buren was the first president to be born as a citizen of the United States. </p>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                      <img
+                                      class="d-block w-100"
+                                      src="images/pres9.jpg"
+                                      alt="President"
+                                      />
+                                      <h4><strong>William Henry Harrison</strong> <br>
+                                      9th President
+                                      </h4>
+                                      <p>Years in office: Mar.1841-Apr.1841<br>
+                                      Lifespan: 1773-1841<br>
+                                      Vice President: John Tyler<br>
+                                      Party: Whig<br>
+                                      Fact: The plantation that William Henry Harrison lived on as a child was attacked during the Revolutionary War. </p>
+                                      </div>
+
+                                      <div class="carousel-item">
+                                        <img
+                                        class="d-block w-100"
+                                        src="images/pres10.jpg"
+                                        alt="President"
+                                        />
+                                        <h4><strong>John Tyler</strong> <br>
+                                        10th President
+                                        </h4>
+                                        <p>Years in office: 1841-1845<br>
+                                        Lifespan: 1790-1862<br>
+                                        Vice President: Vacant through presidency<br>
+                                        Party: Whig<br>
+                                        Fact: John Tyler is one of nine Vice Presidents to become President on the death or resignation of a President. </p>
+                                        </div>
+
+                                        <div class="carousel-item">
+                                          <img
+                                          class="d-block w-100"
+                                          src="images/pres11.jpg"
+                                          alt="President"
+                                          />
+                                          <h4><strong>James K. Polk</strong> <br>
+                                          11th President
+                                          </h4>
+                                          <p>Years in office: 1845-1849<br>
+                                          Lifespan: 1795-1849<br>
+                                          Vice President: George M. Dallas<br>
+                                          Party: Democratic<br>
+                                          Fact: James K. Polk won the presidency as a dark horse candidate. </p>
+                                          </div>
+
+                                          <div class="carousel-item">
+                                            <img
+                                            class="d-block w-100"
+                                            src="images/pres12.jpg"
+                                            alt="President"
+                                            />
+                                            <h4><strong>Zachary Taylor</strong> <br>
+                                            12th President
+                                            </h4>
+                                            <p>Years in office: 1849-1850<br>
+                                            Lifespan: 1784-1850<br>
+                                            Vice President: Millard Fillmore<br>
+                                            Party: Whig<br>
+                                            Fact: Taylor served in the army for four decades, commanding troops in the War of 1812, the Black Hawk War and the second of the Seminole Wars. </p>
+                                            </div>
+
+                                            <div class="carousel-item">
+                                              <img
+                                              class="d-block w-100"
+                                              src="images/pres13.jpg"
+                                              alt="President"
+                                              />
+                                              <h4><strong>Millard Fillmore</strong> <br>
+                                              13th President
+                                              </h4>
+                                              <p>Years in office: 1850-1853<br>
+                                              Lifespan: 1800-1874<br>
+                                              Vice President: Vacant through presidency<br>
+                                              Party: Whig<br>
+                                              Fact: When Fillmore heard the Library of Congress was on fire, he ran down to help put it out. </p>
+                                              </div>
+
+                                              <div class="carousel-item">
+                                                <img
+                                                class="d-block w-100"
+                                                src="images/pres14.jpg"
+                                                alt="President"
+                                                />
+                                                <h4><strong>Franklin Pierce</strong> <br>
+                                                14th President
+                                                </h4>
+                                                <p>Years in office: 1853-1857<br>
+                                                Lifespan: 1804-1869<br>
+                                                Vice President: William R. King<br>
+                                                Party: Democratic<br>
+                                                Fact: Pierce is the only President to not put his hand on the Bible when he was sworn in. </p>
+                                                </div>
+
+                                                <div class="carousel-item">
+                                                  <img
+                                                  class="d-block w-100"
+                                                  src="images/pres15.jpg"
+                                                  alt="President"
+                                                  />
+                                                  <h4><strong>James Buchanan</strong> <br>
+                                                  15th President
+                                                  </h4>
+                                                  <p>Years in office: 1857-1861<br>
+                                                  Lifespan: 1791-1868<br>
+                                                  Vice President: John C. Breckinridge<br>
+                                                  Party: Democratic<br>
+                                                  Fact: James Buchanan was the only president who was never married.</p>
+                                                  </div>
+
+                                                  <div class="carousel-item">
+                                                    <img
+                                                    class="d-block w-100"
+                                                    src="images/pres16.jpg"
+                                                    alt="President"
+                                                    />
+                                                    <h4><strong>Abraham Lincoln</strong> <br>
+                                                    16th President
+                                                    </h4>
+                                                    <p>Years in office: 1861-1865<br>
+                                                    Lifespan: 1809-1865<br>
+                                                    Vice President: Hannibal Hamlin & Andrew Johnson<br>
+                                                    Party: Republican/National Union<br>
+                                                    Fact: Lincoln created the Secret Service hours before his assassination. </p>
+                                                    </div>
+
+                                                    <div class="carousel-item">
+                                                      <img
+                                                      class="d-block w-100"
+                                                      src="images/pres17.jpg"
+                                                      alt="President"
+                                                      />
+                                                      <h4><strong>Andrew Johnson</strong> <br>
+                                                      17th President
+                                                      </h4>
+                                                      <p>Years in office: 1865-1869<br>
+                                                      Lifespan: 1808-1875<br>
+                                                      Vice President: Vacant through presidency<br>
+                                                      Party: National Union/Democratic<br>
+                                                      Fact: Johnson's administration bought Alaska for $7.2 million in gold.  </p>
+                                                      </div>
+
+                                                      <div class="carousel-item">
+                                                        <img
+                                                        class="d-block w-100"
+                                                        src="images/pres18.jpg"
+                                                        alt="President"
+                                                        />
+                                                        <h4><strong>Ulysses S. Grant</strong> <br>
+                                                        18th President
+                                                        </h4>
+                                                        <p>Years in office: 1869-1877<br>
+                                                        Lifespan: 1822-1885<br>
+                                                        Vice President: Schuyler Colfax & Henry Wilson<br>
+                                                        Party: Republican<br>
+                                                        Fact: Grant's real name was Hiram Ulysses Grant, but it was entered incorrectly as Ulysses S. Grant when he went to West Point. </p>
+                                                        </div>
+
+                                                        <div class="carousel-item">
+                                                          <img
+                                                          class="d-block w-100"
+                                                          src="images/pres19.jpg"
+                                                          alt="President"
+                                                          />
+                                                          <h4><strong>Rutherford B. Hayes</strong> <br>
+                                                          19th President
+                                                          </h4>
+                                                          <p>Years in office: 1877-1881<br>
+                                                          Lifespan: 1822-1893<br>
+                                                          Vice President: William A. Wheeler<br>
+                                                          Party: Republican<br>
+                                                          Fact: Hayes did not serve alcohol at the White House. His wife served lemonade instead earning her the nickname Lemonade Lucy. </p>
+                                                          </div>
+
+                                                          <div class="carousel-item">
+                                                            <img
+                                                            class="d-block w-100"
+                                                            src="images/pres20.jpg"
+                                                            alt="President"
+                                                            />
+                                                            <h4><strong>James A. Garfield</strong> <br>
+                                                            20th President
+                                                            </h4>
+                                                            <p>Years in office: Mar.1881-Sep.1881<br>
+                                                            Lifespan: 1831-1881<br>
+                                                            Vice President: Chester A. Arthur<br>
+                                                            Party: Republican<br>
+                                                            Fact: Because of Garfield's powerful voice and his ability at public speaking, he became known as the Preacher President. </p>
+                                                            </div>
+
+                                                            <div class="carousel-item">
+                                                              <img
+                                                              class="d-block w-100"
+                                                              src="images/pres21.jpg"
+                                                              alt="President"
+                                                              />
+                                                              <h4><strong>Chester A. Arthur</strong> <br>
+                                                              21st President
+                                                              </h4>
+                                                              <p>Years in office: 1881-1885<br>
+                                                              Lifespan: 1829-1886<br>
+                                                              Vice President: Vacant through presidency<br>
+                                                              Party: Republican<br>
+                                                              Fact: Arthur liked to be fashionable and changed clothes for each occasion throughout the day. </p>
+                                                              </div>
+
+                                                              <div class="carousel-item">
+                                                                <img
+                                                                class="d-block w-100"
+                                                                src="images/pres22.jpg"
+                                                                alt="President"
+                                                                />
+                                                                <h4><strong>Grover Cleveland</strong> <br>
+                                                                22nd President
+                                                                </h4>
+                                                                <p>Years in office: 1885-1889<br>
+                                                                Lifespan: 1837-1908<br>
+                                                                Vice President: Thomas A. Hendricks<br>
+                                                                Party: Democratic<br>
+                                                                Fact: Rather than fight in the Civil War, Cleveland paid a man $150 to fight in his place.</p>
+                                                                </div>
+
+                                                                <div class="carousel-item">
+                                                                  <img
+                                                                  class="d-block w-100"
+                                                                  src="images/pres23.jpg"
+                                                                  alt="President"
+                                                                  />
+                                                                  <h4><strong>Benjamin Harrison</strong> <br>
+                                                                  23rd President
+                                                                  </h4>
+                                                                  <p>Years in office: 1889-1893<br>
+                                                                  Lifespan: 1833-1901<br>
+                                                                  Vice President: Levi P. Morton<br>
+                                                                  Party: Republican<br>
+                                                                  Fact: Harrison was the grandson of President William Henry Harrison and the only person to be the grandson of another president.</p>
+                                                                  </div>
+
+                                                                  <div class="carousel-item">
+                                                                    <img
+                                                                    class="d-block w-100"
+                                                                    src="images/pres22.jpg"
+                                                                    alt="President"
+                                                                    />
+                                                                    <h4><strong>Grover Cleveland</strong> <br>
+                                                                    24th President
+                                                                    </h4>
+                                                                    <p>Years in office: 1893-1897<br>
+                                                                    Lifespan: 1837-1908<br>
+                                                                    Vice President: Adlai Stevenson I<br>
+                                                                    Party: Democratic<br>
+                                                                    Fact: Rather than fight in the Civil War, Cleveland paid a man $150 to fight in his place.</p>
+                                                                    </div>
+
+                                                                    <div class="carousel-item">
+                                                                      <img
+                                                                      class="d-block w-100"
+                                                                      src="images/pres25.jpg"
+                                                                      alt="President"
+                                                                      />
+                                                                      <h4><strong>William McKinley</strong> <br>
+                                                                      25th President
+                                                                      </h4>
+                                                                      <p>Years in office: 1897-1901<br>
+                                                                      Lifespan: 1843-1901<br>
+                                                                      Vice President: Garret Hobart & Theodore Roosevelt<br>
+                                                                      Party: Republican<br>
+                                                                      Fact: McKinley was the first president to ride in an automobile while in office.</p>
+                                                                      </div>
+
+                                                                      <div class="carousel-item">
+                                                                        <img
+                                                                        class="d-block w-100"
+                                                                        src="images/pres26.jpg"
+                                                                        alt="President"
+                                                                        />
+                                                                        <h4><strong>Theodore Roosevelt</strong> <br>
+                                                                        26th President
+                                                                        </h4>
+                                                                        <p>Years in office: 1901-1909<br>
+                                                                        Lifespan: 1858-1919<br>
+                                                                        Vice President: Charles W. Fairbanks<br>
+                                                                        Party: Republican<br>
+                                                                        Fact: Roosevelt was the first president (and American) to win the Nobel Peace Prize for his role in ending the Russo-Japanese War</p>
+                                                                        </div>
+
+                                                                        <div class="carousel-item">
+                                                                          <img
+                                                                          class="d-block w-100"
+                                                                          src="images/pres27.jpg"
+                                                                          alt="President"
+                                                                          />
+                                                                          <h4><strong>William Howard Taft</strong> <br>
+                                                                          27th President
+                                                                          </h4>
+                                                                          <p>Years in office: 1909-1913<br>
+                                                                          Lifespan: 1857-1930<br>
+                                                                          Vice President: James S. Sherman<br>
+                                                                          Party: Republican<br>
+                                                                          Fact: Taft is the only former U.S. Solicitor General to become President. </p>
+                                                                          </div>
+
+                                                                          <div class="carousel-item">
+                                                                            <img
+                                                                            class="d-block w-100"
+                                                                            src="images/pres28.jpg"
+                                                                            alt="President"
+                                                                            />
+                                                                            <h4><strong>Woodrow Wilson</strong> <br>
+                                                                            28th President
+                                                                            </h4>
+                                                                            <p>Years in office: 1913-1921<br>
+                                                                            Lifespan: 1856-1924<br>
+                                                                            Vice President: Thomas R. Marshall<br>
+                                                                            Party: Democratic<br>
+                                                                            Fact: Wilson advocated for a woman's right to vote.</p>
+                                                                            </div>
+
+                                                                            <div class="carousel-item">
+                                                                              <img
+                                                                              class="d-block w-100"
+                                                                              src="images/pres29.jpg"
+                                                                              alt="President"
+                                                                              />
+                                                                              <h4><strong>Warren G. Harding</strong> <br>
+                                                                              29th President
+                                                                              </h4>
+                                                                              <p>Years in office: 1921-1923<br>
+                                                                              Lifespan: 1865-1923<br>
+                                                                              Vice President: Calvin Coolidge<br>
+                                                                              Party: Republican<br>
+                                                                              Fact: Warren G. Harding was a newspaper reporter before he was a politician.</p>
+                                                                              </div>
+
+                                                                              <div class="carousel-item">
+                                                                                <img
+                                                                                class="d-block w-100"
+                                                                                src="images/pres30.jpg"
+                                                                                alt="President"
+                                                                                />
+                                                                                <h4><strong>Calvin Coolidge</strong> <br>
+                                                                                30th President
+                                                                                </h4>
+                                                                                <p>Years in office: 1923-1929<br>
+                                                                                Lifespan: 1872-1933<br>
+                                                                                Vice President: Charles G. Dawes<br>
+                                                                                Party: Republican<br>
+                                                                                Fact: Coolidge was the only U.S president born on the 4th of July.</p>
+                                                                                </div>
+
+                                                                                <div class="carousel-item">
+                                                                                  <img
+                                                                                  class="d-block w-100"
+                                                                                  src="images/pres31.jpg"
+                                                                                  alt="President"
+                                                                                  />
+                                                                                  <h4><strong>Herbert Hoover</strong> <br>
+                                                                                  31st President
+                                                                                  </h4>
+                                                                                  <p>Years in office: 1929-1933<br>
+                                                                                  Lifespan: 1874-1964<br>
+                                                                                  Vice President: Charles Curtis<br>
+                                                                                  Party: Republican<br>
+                                                                                  Fact: Hoover led War Relief Efforts in World War I.</p>
+                                                                                  </div>
+
+                                                                                  <div class="carousel-item">
+                                                                                    <img
+                                                                                    class="d-block w-100"
+                                                                                    src="images/pres32.jpg"
+                                                                                    alt="President"
+                                                                                    />
+                                                                                    <h4><strong>Franklin D. Roosevelt</strong> <br>
+                                                                                    32nd President
+                                                                                    </h4>
+                                                                                    <p>Years in office: 1933-1945<br>
+                                                                                    Lifespan: 1882-1945<br>
+                                                                                    Vice President: John Nance Garner/Henry A. Wallace/Harry S. Truman<br>
+                                                                                    Party: Democratic<br>
+                                                                                    Fact: Roosevelt is the only president to ever serve 3 terms.</p>
+                                                                                    </div>
+
+                                                                                    <div class="carousel-item">
+                                                                                      <img
+                                                                                      class="d-block w-100"
+                                                                                      src="images/pres33.jpg"
+                                                                                      alt="President"
+                                                                                      />
+                                                                                      <h4><strong>Harry S. Truman</strong> <br>
+                                                                                      33rd President
+                                                                                      </h4>
+                                                                                      <p>Years in office: 1945-1953<br>
+                                                                                      Lifespan: 1884-1972<br>
+                                                                                      Vice President: Alben W. Barkley<br>
+                                                                                      Party: Democratic<br>
+                                                                                      Fact: The "S" does not stand for anything in Truman's name. It comes from his grandfathers' names.</p>
+                                                                                      </div>
+
+                                                                                      <div class="carousel-item">
+                                                                                        <img
+                                                                                        class="d-block w-100"
+                                                                                        src="images/pres34.jpg"
+                                                                                        alt="President"
+                                                                                        />
+                                                                                        <h4><strong>Dwight D. Eisenhower</strong> <br>
+                                                                                        34th President
+                                                                                        </h4>
+                                                                                        <p>Years in office: 1953-1961<br>
+                                                                                        Lifespan: 1890-1969<br>
+                                                                                        Vice President: Richard Nixon<br>
+                                                                                        Party: Republican<br>
+                                                                                        Fact: Although he spent 35 years in the military and served during both world wars, Eisenhower never saw a single day of active combat.</p>
+                                                                                        </div>
+
+                                                                                        <div class="carousel-item">
+                                                                                          <img
+                                                                                          class="d-block w-100"
+                                                                                          src="images/pres35.jpg"
+                                                                                          alt="President"
+                                                                                          />
+                                                                                          <h4><strong>John F. Kennedy</strong> <br>
+                                                                                          35th President
+                                                                                          </h4>
+                                                                                          <p>Years in office: 1961-1963<br>
+                                                                                          Lifespan: 1917-1963<br>
+                                                                                          Vice President: Lyndon B. Johnson<br>
+                                                                                          Party: Democratic<br>
+                                                                                          Fact: JFK was the youngest elected president in US history.</p>
+                                                                                          </div>
+
+                                                                                          <div class="carousel-item">
+                                                                                            <img
+                                                                                            class="d-block w-100"
+                                                                                            src="images/pres36.jpg"
+                                                                                            alt="President"
+                                                                                            />
+                                                                                            <h4><strong>Lyndon B. Johnson</strong> <br>
+                                                                                            36th President
+                                                                                            </h4>
+                                                                                            <p>Years in office: 1963-1969<br>
+                                                                                            Lifespan: 1908-1973<br>
+                                                                                            Vice President: Hubert Humphrey<br>
+                                                                                            Party: Democratic<br>
+                                                                                            Fact: Johnson became Senate minority leader, and after Democrats regained control of the Senate two years later, he became majority leader.</p>
+                                                                                            </div>
+
+                                                                                            <div class="carousel-item">
+                                                                                              <img
+                                                                                              class="d-block w-100"
+                                                                                              src="images/pres37.jpg"
+                                                                                              alt="President"
+                                                                                              />
+                                                                                              <h4><strong>Richard Nixon</strong> <br>
+                                                                                              37th President
+                                                                                              </h4>
+                                                                                              <p>Years in office: 1969-1974<br>
+                                                                                              Lifespan: 1913-1994<br>
+                                                                                              Vice President: Spiro Agnew & Gerald Ford<br>
+                                                                                              Party: Republican<br>
+                                                                                              Fact: Nixon was a lieutenant commander in the Navy during World War II. </p>
+                                                                                              </div>
+
+                                                                                              <div class="carousel-item">
+                                                                                                <img
+                                                                                                class="d-block w-100"
+                                                                                                src="images/pres38.jpg"
+                                                                                                alt="President"
+                                                                                                />
+                                                                                                <h4><strong>Gerald Ford</strong> <br>
+                                                                                                38th President
+                                                                                                </h4>
+                                                                                                <p>Years in office: 1974-1977<br>
+                                                                                                Lifespan: 1913-2006<br>
+                                                                                                Vice President: Nelson Rockefeller<br>
+                                                                                                Party: Republican<br>
+                                                                                                Fact: Ford was the target of two assassination attempts in the same month. </p>
+                                                                                                </div>
+
+                                                                                                <div class="carousel-item">
+                                                                                                  <img
+                                                                                                  class="d-block w-100"
+                                                                                                  src="images/pres39.jpg"
+                                                                                                  alt="President"
+                                                                                                  />
+                                                                                                  <h4><strong>Jimmy Carter</strong> <br>
+                                                                                                  39th President
+                                                                                                  </h4>
+                                                                                                  <p>Years in office: 1977-1981<br>
+                                                                                                  Lifespan: 1924-Present<br>
+                                                                                                  Vice President: Walter Mondale<br>
+                                                                                                  Party: Democratic<br>
+                                                                                                  Fact: Carter is the longest living president in American history at 98 years old currently. </p>
+                                                                                                  </div>
+
+                                                                                                  <div class="carousel-item">
+                                                                                                    <img
+                                                                                                    class="d-block w-100"
+                                                                                                    src="images/pres40.jpg"
+                                                                                                    alt="President"
+                                                                                                    />
+                                                                                                    <h4><strong>Ronald Reagan</strong> <br>
+                                                                                                    40th President
+                                                                                                    </h4>
+                                                                                                    <p>Years in office: 1981-1989<br>
+                                                                                                    Lifespan: 1911-2004<br>
+                                                                                                    Vice President: George H. W. Bush<br>
+                                                                                                    Party: Republican<br>
+                                                                                                    Fact: Reagan's nickname of “Dutch” was given to him at an early age by his family. </p>
+                                                                                                    </div>
+
+                                                                                                    <div class="carousel-item">
+                                                                                                      <img
+                                                                                                      class="d-block w-100"
+                                                                                                      src="images/pres41.jpg"
+                                                                                                      alt="President"
+                                                                                                      />
+                                                                                                      <h4><strong>George H. W. Bush</strong> <br>
+                                                                                                      41st President
+                                                                                                      </h4>
+                                                                                                      <p>Years in office: 1989-1993<br>
+                                                                                                      Lifespan: 1924-2018<br>
+                                                                                                      Vice President: Dan Quayle<br>
+                                                                                                      Party: Republican<br>
+                                                                                                      Fact: Bush was the second-youngest man to enlist in the Navy as a fighter pilot during WW2 </p>
+                                                                                                      </div>
+
+                                                                                                      <div class="carousel-item">
+                                                                                                        <img
+                                                                                                        class="d-block w-100"
+                                                                                                        src="images/pres.jpg"
+                                                                                                        alt="President"
+                                                                                                        />
+                                                                                                        <h4><strong>Bill Clinton</strong> <br>
+                                                                                                        42nd President
+                                                                                                        </h4>
+                                                                                                        <p>Years in office: 1993-2001<br>
+                                                                                                        Lifespan: 1946-Present<br>
+                                                                                                        Vice President: Al Gore<br>
+                                                                                                        Party: Democratic<br>
+                                                                                                        Fact: Clinton became the first Democrat to be elected to a second term since Franklin Delano Roosevelt in 1936.  </p>
+                                                                                                        </div>
+
+                                                                                                        <div class="carousel-item">
+                                                                                                          <img
+                                                                                                          class="d-block w-100"
+                                                                                                          src="images/pres43.jpg"
+                                                                                                          alt="President"
+                                                                                                          />
+                                                                                                          <h4><strong>George W. Bush</strong> <br>
+                                                                                                          43rd President
+                                                                                                          </h4>
+                                                                                                          <p>Years in office: 2001-2009<br>
+                                                                                                          Lifespan: 1946-Present<br>
+                                                                                                          Vice President: Dick Cheney<br>
+                                                                                                          Party: Republican<br>
+                                                                                                          Fact: Bush's election hinged on the cancelled Florida recount.  </p>
+                                                                                                          </div>
+
+                                                                                                          <div class="carousel-item">
+                                                                                                            <img
+                                                                                                            class="d-block w-100"
+                                                                                                            src="images/pres44.jpg"
+                                                                                                            alt="President"
+                                                                                                            />
+                                                                                                            <h4><strong>Barack Obama</strong> <br>
+                                                                                                            44th President
+                                                                                                            </h4>
+                                                                                                            <p>Years in office: 2009-2017<br>
+                                                                                                            Lifespan: 1961-Present<br>
+                                                                                                            Vice President: Joe Biden<br>
+                                                                                                            Party: Democratic<br>
+                                                                                                            Fact: Obama was the first African American President.  </p>
+                                                                                                            </div>
+
+                                                                                                            <div class="carousel-item">
+                                                                                                              <img
+                                                                                                              class="d-block w-100"
+                                                                                                              src="images/pres45.jpg"
+                                                                                                              alt="President"
+                                                                                                              />
+                                                                                                              <h4><strong>Donald Trump</strong> <br>
+                                                                                                              45th President
+                                                                                                              </h4>
+                                                                                                              <p>Years in office: 2017-2021<br>
+                                                                                                              Lifespan: 1946-Present<br>
+                                                                                                              Vice President: Mike Pence<br>
+                                                                                                              Party: Republican<br>
+                                                                                                              Fact: Trump is the only president to be impeached twice but was never removed from office.</p>
+                                                                                                              </div>
+
+                                                                                                              <div class="carousel-item">
+                                                                                                                <img
+                                                                                                                class="d-block w-100"
+                                                                                                                src="images/pres46.jpg"
+                                                                                                                alt="President"
+                                                                                                                />
+                                                                                                                <h4><strong>Joe Biden</strong> <br>
+                                                                                                                46th President
+                                                                                                                </h4>
+                                                                                                                <p>Years in office: 2021-Present<br>
+                                                                                                                Lifespan: 1942-Present<br>
+                                                                                                                Vice President: Kamala Harris<br>
+                                                                                                                Party: Democratic<br>
+                                                                                                                Fact: Buden was sworn into the US Senate inside of a hospital in 1973.</p>
+                                                                                                                </div>
+
+                        <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#course_carousel"
+                  data-bs-slide="prev">
+                  <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true">
+                  </span>
+                  <span
+                  class="visually-hidden">
+                  Previous
+                  </span>
+                  </button> 
+
+                  <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#course_carousel"
+                  data-bs-slide="next"
+                >
+                <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+        </div>
+         
+          </div>
+      <!-- End of president carousel -->
+         
+      <!-- Start of button popup area -->
+      <!-- Button popup used to show information when it is clicked and it closes it with another click -->
+              <div class="col button-container">
+      
+                <h2>Learn about the different types of votes!</h2>
+      
+                <!-- Responsiveness here is set to make the buttons sit in the right place whenever the page size changes. -->
+              <button class="btn btn-lg btn-secondary d-flex m-5"
+            data-bs-container="body"
+            data-bs-toggle="popover"
+            data-bs-placement="right"
+            title="What is an electoral vote?"
+            data-bs-content="The Electoral College is made up of 538 electors who cast votes to decide the President and Vice-President of the United States.
+            The candidate who receives a majority of electoral votes (270) wins the Presidency. The number 538 is the sum of the nation's 435 Representatives, 
+            100 Senators, and 3 electors given to the District of Columbia.">
+              <span> <i class="bi bi-bank2"></i></span>
+              <span style="margin-left: 10px">Electoral Vote</span>
+              </button>
+      
+              <button class="btn btn-lg btn-secondary d-flex m-5"
+            data-bs-container="body"
+            data-bs-toggle="popover"
+            data-bs-placement="right"
+            title="What is a popular vote?"
+            data-bs-content="The popular vote is the vote for a U.S. presidential candidate made by the qualified voters, as opposed to that made by the electoral college.
+            The state's popular vote determines which party's slates will be made electors. ">
+              <span> <i class="bi bi-person-fill-check"></i></span>
+              <span style="margin-left: 10px">Popular Vote</span>
+              </button>
+      
+      </div>
+            <!-- End of button popup area -->
+      
+      
+          </div>
+
+      </div>
+      
+
+    <footer>
+      <div class="footer-container">
+        <div class="teacher-info">
+          <h5>Erin Neely</h5>
+        </div>
+        <div class="school-info">
+          <h5>Mt Vernon school</h5>
+         
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

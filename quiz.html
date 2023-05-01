@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>President's Day</title>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="/images/faviconk.png">
+    <link rel="stylesheet/less" type="text/css" href="Style/main.less"/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="java.js" defer></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.11.3/less.min.js"></script>
+    <link rel="stylesheet" href="Style/main.css" />
+  </head>
+  <body>
+        <a class="hamburger" href="#navbar">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+      <nav id="navbar">
+        <ul>
+            <i class="fa-solid fa-house"></i>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="quiz.html">
+            Quiz
+            </a></li>
+          <li><a href="https://potus.com/presidential-facts/political-party/">Affiliation</a></li>
+          <li><a href="https://www.factretriever.com/us-presidents-facts">Fun Facts</a></li>
+
+        </ul>    
+        <div>
+          <a class="close" href="#">
+            <i class="fa-solid fa-xmark"></i>
+        </a>
+        </div>
+      </nav>
+      <!-- Inside of the wrapper is where all of the questions will be placed while it looks professional. -->
+      <div class="wrapper">
+
+        <h1 style="text-align: center;">President's Day Quiz</h1>
+
+      <div class="container"  style="border: 2px dotted rgb(183, 166, 69);">
+       <p>Choose a question from below.</p>
+      
+       <div class="btn-group">
+        <button class="qBtn btn btn-sm btn-info m-2" num="1">Question #1</button>
+        <button class="qBtn btn btn-sm btn-info m-2" num="2">Question #2</button>
+        <button class="qBtn btn btn-sm btn-info m-2" num="3">Question #3</button>
+        <button class="qBtn btn btn-sm btn-info m-2" num="4">Question #4</button>
+        <button class="qBtn btn btn-sm btn-info m-2" num="5">Question #5</button><br>
+        <button class="qBtn btn btn-sm btn-info m-2" num="6">Question #6</button>
+        <button class="qBtn btn btn-sm btn-info m-2" num="7">Question #7</button>
+        <button class="qBtn btn btn-sm btn-info m-2" num="8">Question #8</button>
+        <button class="qBtn btn btn-sm btn-info m-2" num="9">Question #9</button>
+        <button class="qBtn btn btn-sm btn-info m-2" num="10">Question #10</button>
+        
+       </div>
+      <div>
+       <p>
+          <span id="question">President Questions</span>
+          <span id = "answer" style="padding:3px;color:green"></span>
+       </p>
+      </div>
+
+      <div class="d-grid gap-2 d-md-block">
+        <button id="check" class="btn btn-primary" type="button">Check response</button>
+        
+      </div>
+  </div>
+       
+      
+    <footer>
+      <div class="footer-container">
+        <div class="teacher-info">
+          <h5>Erin Neely</h5>
+        </div>
+        <div class="school-info">
+          <h5>Mt Vernon school</h5>
+         
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

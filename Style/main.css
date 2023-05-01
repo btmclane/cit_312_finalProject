@@ -1,0 +1,26 @@
+p {
+    background-color: bisque;
+}
+
+.button-container .btn {
+    width: 300px;
+    float: right;
+    justify-content: center;
+  }
+
+  
+.btn {
+    background-color: rgb(183, 166, 69) ;
+    display: block;
+    
+  }
+  
+  label {
+      display: inline-block;
+      width: 50em;
+      border: 5px dotted red;
+      background-color: bisque;
+      font-weight: bold;
+    }
+
+   

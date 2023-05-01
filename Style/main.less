@@ -1,0 +1,163 @@
+// Less styling used to keep the same color and fonts across the page. Also used for making the nav area look more professional
+@font-stack: Verdana, Geneva, Tahoma, sans-serif;
+@nav-background: rgb(183, 166, 69);
+@nav-width: 30%;
+@nav-height: 100vh;
+@nav-transition: transform 0.1s ease;
+@nav-target-translate: translateY(0);
+@nav-initial-translate: translateY(-100%);
+
+* {
+  font-family: @font-stack;
+  margin: 0px;
+}
+
+h1 {
+  color: @nav-background;
+  background-color: black;
+  text-align: center;
+  padding-top: 20px;
+  width: 100%;
+  
+}
+
+img {
+  height: 400px;
+  width: 200px;
+}
+
+
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 500px;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.flex-item{
+  margin: 10px;
+}
+
+h4, 
+h2{
+  background-color: @nav-background;
+}
+
+nav {
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: @nav-width;
+  height: @nav-height;
+  background-color: @nav-background;
+  text-align: center;
+  transform: @nav-initial-translate;
+  transition: @nav-transition;
+
+
+  &:target {
+    transform: @nav-target-translate;
+  }
+
+  > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+
+    a {
+      text-decoration: none;
+      font-weight: bolder;
+      font-size: larger;
+      padding: 2px;
+      margin: 2px;
+      color: rgb(248, 245, 245);
+      display: block;
+
+      &:link {
+        color: rgb(255, 255, 255);
+      }
+
+      &:hover {
+        color: rgb(18, 19, 18);
+        background-color: lightgoldenrodyellow;
+      }
+    }
+  }
+
+  .close {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 3px;
+    margin: 3px;
+  }
+
+}
+
+
+/* Footer styling */
+footer {
+  position: relative;
+  background-color: #c3c3c3;
+  color: #555;
+  font-size: 14px;
+  min-height: 100px;
+  margin-top: 20px;
+  width: 100%;
+  bottom: 0;
+
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+    .teacher-info, .school-info {
+      width: 45%;
+      margin-top: 50px;
+
+      h4 {
+        margin-bottom: 10px;
+        font-size: 18px;
+      }
+
+      p {
+        margin-bottom: px;
+      }
+
+      a {
+        color: #555;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 700px) {
+  nav{
+    height: auto;
+    transform: @nav-target-translate;
+    width: 100%;
+  }
+
+  .hamburger, .close {
+    display: none;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+}
