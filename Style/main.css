@@ -15,12 +15,6 @@ p {
     
   }
   
-  label {
-      display: inline-block;
-      width: 50em;
-      border: 5px dotted red;
-      background-color: bisque;
-      font-weight: bold;
-    }
+ 
 
    
